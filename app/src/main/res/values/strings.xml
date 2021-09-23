@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GPA Calculator App</string>
+    <string name="title">GPA Calculator</string>
+    <string name="courseOne">Course 1</string>
+    <string name="courseTwo">Course 2</string>
+    <string name="courseThree">Course 3</string>
+    <string name="courseFour">Course 4</string>
+    <string name="courseFive">Course 5</string>
+    <string name="btn1">Compute GPA</string>
+    <string name="btn2">Clear</string>
+
+</resources>

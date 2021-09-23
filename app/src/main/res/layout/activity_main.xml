@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_courseOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/courseOne"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gpa1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:hint="Enter Course GPA" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_courseTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/courseTwo"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="134dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gpa2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:hint="Enter Course GPA" />
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_courseThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/courseThree"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gpa3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter Course GPA"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:text="" />
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_courseFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/courseFour"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="216dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gpa4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter Course GPA"
+                android:paddingLeft="70dp"
+                android:paddingTop="10dp"
+                android:text="" />
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_courseFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/courseFive"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="253dp" />
+
+        <EditText
+            android:id="@+id/gpa5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Course GPA"
+            android:paddingLeft="70dp"
+            android:paddingTop="10dp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="158dp"
+            android:layout_height="57dp"
+            android:text="@string/btn1"
+            android:onClick="computeGPA"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="158dp"
+            android:layout_height="57dp"
+            android:text="@string/btn2"
+            android:onClick="clearScreen"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="checking" />
+
+</LinearLayout>
